@@ -1,7 +1,7 @@
 # NPC - All Mounts #
 
 _This module was created for [StygianCore](https://rebrand.ly/stygiancoreproject). A World of Warcraft 3.3.5a Solo/LAN repack by StygianTheBest | [GitHub](https://rebrand.ly/stygiangithub) | [Website](https://rebrand.ly/stygianthebest))_
-_This module has now being ported to AzerothCore by gtao725.
+_This module has now being ported to AzerothCore by gtao725._
 
 ### Description ###
 
