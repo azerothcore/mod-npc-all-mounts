@@ -22,6 +22,7 @@ _This module has now being ported to AzerothCore by gtao725._
 
 ### Version ###
 
+- v2019.04.15 - Ported to AzerothCore by gtao725 (https://github.com/gtao725/)
 - v2019.02.14 - Update AI, Fix Bengal Tiger, Remove Invalid Mounts
 - v2018.12.15 - Updated for StygianCore
 - v2017.09.03 - Added Bengal Tiger + Tiger Riding
