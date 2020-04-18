@@ -134,7 +134,7 @@ public:
         return true;
     }
 
-    bool OnGossipSelect(Player * player, Creature * creature, uint32 sender, uint32 uiAction)
+    bool OnGossipSelect(Player* player, Creature* /* creature */, uint32 sender, uint32 uiAction) override
     {
         player->PlayerTalkClass->ClearMenus();
 
@@ -495,7 +495,7 @@ public:
     };
 
     // CREATURE AI
-    CreatureAI * GetAI(Creature * creature) const
+    CreatureAI * GetAI(Creature * creature) const override
     {
         return new NPC_PassiveAI(creature);
     }
