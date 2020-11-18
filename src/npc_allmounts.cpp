@@ -61,6 +61,7 @@ This code and content is released under the [GNU AGPL v3](https://github.com/aze
 #include "ScriptMgr.h"
 #include "Chat.h"
 #include "Player.h"
+#include "ScriptedCreature.h"
 
 bool AllMountsAnnounceModule;
 bool AllMountsTeachBengalTiger;
