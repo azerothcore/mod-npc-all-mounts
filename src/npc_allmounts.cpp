@@ -76,15 +76,6 @@ public:
     void OnBeforeConfigLoad(bool reload) override
     {
         if (!reload) {
-            std::string conf_path = _CONF_DIR;
-            std::string cfg_file = conf_path + "/npc_allmounts.conf";
-#ifdef WIN32
-            cfg_file = "npc_allmounts.conf";
-#endif
-            std::string cfg_def_file = cfg_file + ".dist";
-            sConfigMgr->LoadMore(cfg_def_file.c_str());
-            sConfigMgr->LoadMore(cfg_file.c_str());
-
             AllMountsAnnounceModule = sConfigMgr->GetBoolDefault("AllMountsNPC.Announce", 1);
             AllMountsTeachBengalTiger = sConfigMgr->GetBoolDefault("AllMountsNPC.TeachBengalTiger", 0);
             AllMountsEnableAI = sConfigMgr->GetBoolDefault("AllMountsNPC.EnableAI", 1);
