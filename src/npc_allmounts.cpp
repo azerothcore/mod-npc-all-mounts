@@ -118,15 +118,15 @@ public:
         // If they already know Furor's Fabled Steed, we've probably taught them everything before.
         if (player->HasSpell(24576))
         {
-            player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, messageKnown.str(), GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, messageKnown.str(), GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
         }
         else
         {
-            player->ADD_GOSSIP_ITEM(GOSSIP_ICON_TRAINER, "Teach me to ride.. EVERYTHING!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
-            player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Maybe Next Time", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+            AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Teach me to ride.. EVERYTHING!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Maybe Next Time", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
         }
 
-        player->SEND_GOSSIP_MENU(601014, creature->GetGUID());
+        SendGossipMenuFor(player, 601014, creature->GetGUID());
         return true;
     }
 
