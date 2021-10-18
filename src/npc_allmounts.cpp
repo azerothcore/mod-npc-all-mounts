@@ -457,28 +457,28 @@ public:
                     {
                     case 1:
                     {
-                        me->MonsterSay("I can teach you to ride.. anything!", LANG_UNIVERSAL, NULL);
+                        me->Say("I can teach you to ride.. anything!", LANG_UNIVERSAL);
                         me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                         MessageTimer = urand(60000, 180000);
                         break;
                     }
                     case 2:
                     {
-                        me->MonsterSay("Have you ever wanted to mount a chicken?", LANG_UNIVERSAL, NULL);
+                        me->Say("Have you ever wanted to mount a chicken?", LANG_UNIVERSAL);
                         me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                         MessageTimer = urand(60000, 180000);
                         break;
                     }
                     case 3:
                     {
-                        me->MonsterSay("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL, NULL);
+                        me->Say("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL);
                         me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                         MessageTimer = urand(60000, 180000);
                         break;
                     }
                     default:
                     {
-                        me->MonsterSay("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL, NULL);
+                        me->Say("The finest mounts in all of Azeroth are in my stables.", LANG_UNIVERSAL);
                         me->HandleEmoteCommand(EMOTE_ONESHOT_WAVE);
                         MessageTimer = urand(60000, 180000);
                         break;
