@@ -76,9 +76,9 @@ public:
     void OnBeforeConfigLoad(bool reload) override
     {
         if (!reload) {
-            AllMountsAnnounceModule = sConfigMgr->GetBoolDefault("AllMountsNPC.Announce", 1);
-            AllMountsTeachBengalTiger = sConfigMgr->GetBoolDefault("AllMountsNPC.TeachBengalTiger", 0);
-            AllMountsEnableAI = sConfigMgr->GetBoolDefault("AllMountsNPC.EnableAI", 1);
+            AllMountsAnnounceModule = sConfigMgr->GetOption<bool>("AllMountsNPC.Announce", 1);
+            AllMountsTeachBengalTiger = sConfigMgr->GetOption<bool>("AllMountsNPC.TeachBengalTiger", 0);
+            AllMountsEnableAI = sConfigMgr->GetOption<bool>("AllMountsNPC.EnableAI", 1);
         }
     }
 };
