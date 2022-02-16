@@ -8,6 +8,25 @@ _This module has now being ported to AzerothCore by gtao725._
 ### Description ###
 
 - Adds an NPC that will teach all available mounts to the player
+- 
+## Notice:
+
+Due to the uniquiness of the module you will get this message on the worldconsole, but nothing is broken.
+It is due to the npc not exactly having a gossip menu in the database, the script handles the gossip menu because of the additional locales.
+![image](https://user-images.githubusercontent.com/16887899/154320677-b55f8528-6129-46e2-902f-39d3465244b7.png)
+Please add the adjustment to the conf to have that error message not show up:
+```
+#    Creatures.CustomIDs
+#        Description: The list of custom creatures with gossip dialogues hardcoded in core,
+#                     divided by "," without spaces.
+#                     It is implied that you do not use for these NPC dialogs data from "gossip_menu" table.
+#                     Server will skip these IDs during the definitions validation process.
+#        Example:     Creatures.CustomIDs = "190010,55005,999991,25462,98888,601014" - Npcs for Transmog, Guild-zone, 1v1-arena, Skip Dk,
+#                                                                                      Racial Trait Swap, NPC - All Mounts Modules
+#        Default:     ""
+
+Creatures.CustomIDs = "190010,55005,999991,25462,98888,601014"
+```
 
 ### To-Do ###
 
