@@ -13,7 +13,9 @@ _This module has now being ported to AzerothCore by gtao725._
 
 Due to the uniquiness of the module you will get this message on the worldconsole, but nothing is broken.
 It is due to the npc not exactly having a gossip menu in the database, the script handles the gossip menu because of the additional locales.
+
 ![image](https://user-images.githubusercontent.com/16887899/154320677-b55f8528-6129-46e2-902f-39d3465244b7.png)
+
 Please add the adjustment to the conf to have that error message not show up:
 ```
 #    Creatures.CustomIDs
