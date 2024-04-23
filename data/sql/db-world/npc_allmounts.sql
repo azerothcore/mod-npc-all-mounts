@@ -1,25 +1,25 @@
 -- --------------------------------------------------------------------------------------
---	ALL MOUNTS VENDOR - 601014
+--  ALL MOUNTS VENDOR - 601014
 -- --------------------------------------------------------------------------------------
 SET
-@Entry 		:= 601014,
-@Model 		:= 26571, -- The Black Knight
--- @Model 		:= 21249, -- Armored Orc
-@Name 		:= "The Mountain",
-@Title 		:= "Mount Trainer",
-@Icon 		:= "Speak",
+@Entry      := 601014,
+@Model      := 26571, -- The Black Knight
+-- @Model       := 21249, -- Armored Orc
+@Name       := "The Mountain",
+@Title      := "Mount Trainer",
+@Icon       := "Speak",
 @GossipMenu := 0,
-@MinLevel 	:= 80,
-@MaxLevel 	:= 80,
-@Faction 	:= 35,
-@NPCFlag 	:= 1,
-@Scale		:= 1.0,
-@Rank		:= 0,
-@Type 		:= 7,
-@TypeFlags 	:= 0,
+@MinLevel   := 80,
+@MaxLevel   := 80,
+@Faction    := 35,
+@NPCFlag    := 1,
+@Scale      := 1.0,
+@Rank       := 0,
+@Type       := 7,
+@TypeFlags  := 0,
 @FlagsExtra := 2,
-@AIName		:= "SmartAI",
-@Script 	:= "All_Mounts_NPC";
+@AIName     := "SmartAI",
+@Script     := "All_Mounts_NPC";
 
 -- NPC
 DELETE FROM creature_template WHERE entry = @Entry;

@@ -1,14 +1,18 @@
 # ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
-## NPC - All Mounts #
-- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-npc-all-mounts/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-npc-all-mounts)
+
+## NPC - All Mounts
+
+- Latest build status with azerothcore:
+
+[![Build Status](https://github.com/azerothcore/mod-npc-all-mounts/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-npc-all-mounts)
 
 _This module was created for [StygianCore](https://rebrand.ly/stygiancoreproject). A World of Warcraft 3.3.5a Solo/LAN repack by StygianTheBest | [GitHub](https://rebrand.ly/stygiangithub) | [Website](https://rebrand.ly/stygianthebest))_
 _This module has now being ported to AzerothCore by gtao725._
 
-### Description ###
+### Description
 
 - Adds an NPC that will teach all available mounts to the player
-- 
+
 ## Notice:
 
 Due to the uniquiness of the module you will get this message on the worldconsole, but nothing is broken.
@@ -17,6 +21,7 @@ It is due to the npc not exactly having a gossip menu in the database, the scrip
 ![image](https://user-images.githubusercontent.com/16887899/154320677-b55f8528-6129-46e2-902f-39d3465244b7.png)
 
 Please add the adjustment to the conf to have that error message not show up:
+
 ```
 #    Creatures.CustomIDs
 #        Description: The list of custom creatures with gossip dialogues hardcoded in core,
@@ -30,11 +35,11 @@ Please add the adjustment to the conf to have that error message not show up:
 Creatures.CustomIDs = "190010,55005,999991,25462,98888,601014"
 ```
 
-### To-Do ###
+### To-Do
 
 - Remove all mounts not compatible with 3.3.5a
 
-### Data ###
+### Data
 
 - Type: NPC
 - Script: All_Mounts_NPC
@@ -42,15 +47,14 @@ Creatures.CustomIDs = "190010,55005,999991,25462,98888,601014"
 - SQL: Yes
     - NPC ID: 601014
 
+### Version
 
-### Version ###
-
+- v2024.04.23 - Compatibility with the latest version of the emulator
 - v2019.04.15 - Ported to AzerothCore by gtao725 (https://github.com/gtao725/)
 - v2019.02.14 - Update AI, Fix Bengal Tiger, Remove Invalid Mounts
 - v2018.12.15 - Updated for StygianCore
 - v2017.09.03 - Added Bengal Tiger + Tiger Riding
 - v2017.08.01 - Release
-
 
 ### CREDITS
 
