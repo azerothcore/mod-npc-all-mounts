@@ -18,7 +18,7 @@ SET
 @Type       := 7,
 @TypeFlags  := 0,
 @FlagsExtra := 2,
-@AIName     := "SmartAI",
+@AIName     := "",
 @Script     := "All_Mounts_NPC";
 
 -- NPC
