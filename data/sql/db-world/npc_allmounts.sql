@@ -6,7 +6,7 @@ SET
 @Model      := 26571, -- The Black Knight
 -- @Model       := 21249, -- Armored Orc
 @Name       := "The Mountain",
-@Title      := "Mount Trainer",
+@Title      := "Vendedor de Monturas",
 @Icon       := "Speak",
 @GossipMenu := 0,
 @MinLevel   := 80,
@@ -31,4 +31,4 @@ INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`,
 (@Entry, 0, @Model, 1, 1, 0);
 
 DELETE FROM `npc_text` WHERE `ID`=@Entry;
-INSERT INTO `npc_text` (`ID`, `text0_0`) VALUES (@Entry, 'Hail $N. I can teach you to ride.. anything!');
+INSERT INTO `npc_text` (`ID`, `text0_0`) VALUES (@Entry, 'Bienvenido $N. Explora mi tienda de monturas: elige una categoría para ver lo que está a la venta.');
