@@ -10,12 +10,33 @@ AllMountsNPC.Announce = 1
 #   Enable random emotes for the NPC?
 #
 
-AllMountsNPC.EnableAI= 1
+AllMountsNPC.EnableAI = 1
 
 #
-#   Enable Bengal Tiger mount?
-#   Disabled if using the BengalTiger NPC which teaches Tiger Riding
-#   on character creation. The tiger is then obtained in the cave.
+#   Item ID used as currency to purchase mounts.
+#   Set to 0 to disable item cost (mounts become free if premium_cost is also 0).
 #
 
-AllMountsNPC.TeachBengalTiger = 0
+AllMountsNPC.CostItemId = 29736
+
+#
+#   Display name for the cost item (shown in gossip and chat messages).
+#   Does not change which item is taken; only the text shown to players.
+#   If empty, the text uses a generic word (items) instead of the name.
+#
+
+AllMountsNPC.CostItemName = "Runa Arcana"
+
+#
+#   Price multiplier for non-premium accounts.
+#   Final cost = premium_cost (premium) or premium_cost * NonPremiumMultiplier (non-premium).
+#   Premium accounts are rows in table `premium` (Character DB) with active = 1.
+#
+
+AllMountsNPC.NonPremiumMultiplier = 5
+
+#
+#   Number of mounts shown per gossip page inside a category.
+#
+
+AllMountsNPC.PageSize = 15
